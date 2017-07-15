@@ -1,0 +1,26 @@
+<h2>Home Page</h2>
+
+<!-- template/reference variable # -->
+<p #para1>
+
+</p>
+
+<button (click)="para1.textContent='Set' ">
+    Set Text
+</button>
+
+<!-- property binding -->
+
+<!-- count="100 + 20 " for fixed  value -->
+
+<!-- [count]="100 + 20" for express  count is 120-->
+
+At Home {{homeLikes}}
+
+<likes  [count]="homeLikes" 
+        (countChange)="likesChanged($event)"
+>
+    <!-- transclude -> transfer and include -->
+    <h2>Home Likes</h2>
+
+</likes>

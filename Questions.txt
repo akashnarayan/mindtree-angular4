@@ -1,0 +1,5 @@
+1. Override child styles from parent
+2. Global Styles [styles, angular cli]
+3. stylus
+4. Subject [BehaviourSubject]
+5. 

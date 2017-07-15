@@ -1,0 +1,26 @@
+<h2>About Page</h2>
+
+<!-- elvis operator ?. -->
+
+<p>City: {{address?.city}}</p>
+
+<h2> Members</h2>
+
+<div (click)="parentClient()">
+
+<button (click)="showHide($event)">
+    Show/Hide
+</button>
+
+<ul *ngIf="show == true">
+    <!-- *ngFor is called structural directive -->
+
+    <li *ngFor="let name of members">
+        {{name}}
+    </li>
+</ul>
+</div>
+
+<likes>
+
+</likes>

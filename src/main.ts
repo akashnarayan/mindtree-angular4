@@ -1,11 +1,14 @@
-import { enableProdMode } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+//bootstrapping
 
-import { AppModule } from './app/app.module';
-import { environment } from './environments/environment';
+//node_modules --> vendor bundle
+import {platformBrowserDynamic} from 
+        "@angular/platform-browser-dynamic";
 
-if (environment.production) {
-  enableProdMode();
-}
+//local app
+import { AppModule } from "app/app.module";
 
-platformBrowserDynamic().bootstrapModule(AppModule);
+//angular shall start app module
+
+
+platformBrowserDynamic()
+    .bootstrapModule(AppModule);
